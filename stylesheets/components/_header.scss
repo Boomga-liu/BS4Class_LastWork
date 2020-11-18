@@ -1,0 +1,72 @@
+.header {
+    position: relative;
+
+    .jumbotron-bg {
+        background-size: cover;
+        background-position: center center;
+        min-height: 496px;
+    }
+
+    .text-hide {
+        color: transparent;
+        text-shadow: none;
+        border: none;
+
+        .header-img-content {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+    }
+
+    .rectangle-section {
+        margin-top: -90px;
+    }
+
+    .rectangle-img-wrap {
+        text-decoration: none;
+        position: relative;
+        color: #fff;
+
+        &+.rectangle-img-wrap {
+            border-left: 1px solid white;
+        }
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: theme-color('primary');
+
+            .bg-cover {
+                background-color: rgba(theme-color('accent'), .8);
+            }
+
+            .text-custom {
+                font-weight: bolder;
+            }
+        }
+
+        .bg-cover {
+            position: absolute;
+            background-color: rgba(63, 93, 69, 0.8);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transition: .5s;
+        }
+
+        .img-cover {
+            height: 256px;
+            background-size: cover;
+            background-position: center center;
+
+            .text-custom {
+                writing-mode: vertical-lr;
+                font-size: 24px;
+                letter-spacing: 10px;
+                z-index: 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.custom-input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+
+    &:checked~.custom-label::after {
+        display: block;
+    }
+}
+
+.custom-label::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    left: 0;
+    top: 0.3rem;
+}
+
+.custom-label::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/check.svg);
+    background-size: cover;
+    background-position: center center;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 0.3rem;
+    display: none;
+}

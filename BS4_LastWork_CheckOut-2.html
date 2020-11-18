@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <title>BS4_LastWork_CheckOut-1</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <button class="navbar-toggler border-0 d-md-none" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars d-inline-block text-primary" aria-hidden="true"
+                    style="width: 24px; height: 24px;"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-all-dark.svg" class="d-none d-md-inline-block" width="219.49" height="40" alt=""
+                    loading="lazy" />
+                <img src="images/logotype-sm-dark.svg" class="d-md-none d-inline-block" width="114" height="18"
+                    alt="" />
+            </a>
+            <a href="#" class="nav-link text-primary order-md-1">
+                <i class="fa fa-shopping-cart d-inline-block" aria-hidden="true" style="width: 24px; height: 24px;"></i>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BS4_lastWork_Product.html">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BS4_LastWork_LogIn.html" tabindex="-1" aria-disabled="true">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- form -->
+    <div class="container my-lg-6">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="negative-row-margin">
+                    <div class="p-5 bg-primary text-primary-light">
+                        <div class="form-row mb-5">
+                            <div class="col-6">
+                                <h1 class="text-primary-light">運送</h1>
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <div class="process-steps w-100">
+                                    <div class="step-circle completed">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="step-circle active"></div>
+                                    <div class="step-circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="h4">信用卡卡號</label>
+                            <input type="tel" class="form-control form-control-lg bg-primary-lighter" id="phone"
+                                placeholder="9012-3456-7890-1234" />
+                        </div>
+                        <label for="lastname" class="h4">持卡人姓名</label>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg bg-primary-lighter"
+                                        id="lastname" placeholder="王" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg bg-primary-lighter"
+                                        id="firstname" placeholder="小明" />
+                                </div>
+                            </div>
+                        </div>
+                        <label for="validity-period-month" class="h4">有效期限</label>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <select name="" id="validity-period-month"
+                                        class="form-control form-control-lg bg-primary-lighter">
+                                        <option value="月">月</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <select name="" id="region" class="form-control form-control-lg bg-primary-lighter">
+                                        <option value="年">年</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="cvv2" class="h4">背面末三碼</label>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" class="form-control form-control-lg bg-primary-lighter"
+                                        placeholder="123" id="cvv2" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="negative-row-margin">
+                    <a href="BS4_LastWork_CheckOut-3.html"
+                        class="btn btn-accent btn-block btn-lg py-3 text-primary">下一步</a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="card border-primary-light rounded-0 mb-4">
+                    <h2 class="card-header text-txt-primary text-center bg-primary-light border-primary-light">
+                        訂單摘要
+                    </h2>
+                    <div class="card-body text-txt-primary">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>小計</span>
+                            <span>NT$ 2,700</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>運費</span>
+                            <span>NT$ 300</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="h5">總計</span>
+                            <span class="h5">NT$ 3000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-primary-light rounded-0">
+                    <h2 class="card-header text-txt-primary bg-primary-light border-primary-light">
+                        購物清單
+                    </h2>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="card-image card-image-sm mr-4" style="
+                    background-image: url(https://picsum.photos/120/80?random=1);
+                  "></div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-fill mr-lg-4 text-txt-primary">
+                                    <span class="h5">抹茶馬卡龍(2)</span>
+                                    <br />
+                                    <span>NT$ 450</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3">
+                            <div class="card-image card-image-sm mr-4" style="
+                    background-image: url(https://picsum.photos/120/80?random=2);
+                  "></div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-fill mr-lg-4 text-txt-primary">
+                                    <span class="h5">抹茶馬卡龍(2)</span>
+                                    <br />
+                                    <span>NT$ 450</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3">
+                            <div class="card-image card-image-sm mr-4" style="
+                    background-image: url(https://picsum.photos/120/80?random=3);
+                  "></div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-fill mr-lg-4 text-txt-primary">
+                                    <span class="h5">抹茶馬卡龍(2)</span>
+                                    <br />
+                                    <span>NT$ 450</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section Subscribe Area  -->
+    <section class="py-5 bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex align-items-center mb-4 mb-md-0">
+                    <img src="../images/logo-light.svg" width="40" height="40" alt />
+                    <span class="mx-3 text-white h4 mb-0">訂閱你我的甜蜜郵件</span>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-square bg-primary-light d-flex justify-content-between">
+                        <label for="subscription" class="form-square-icon"><i class="fas fa-envelope text-primary"
+                                style="font-size: 20px;"></i></label>
+                        <input type="email" class="form-input w-100" id="subscription" />
+                        <button class="btn btn-lg bg-accent rounded-0">
+                            <i class="fas fa-arrow-right text-primary"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-primary-light py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex flex-column justify-content-between">
+                    <div>
+                        <img src="../images/logotype-sm-dark.svg" height="27" alt />
+                    </div>
+                    <ul class="list-style text-primary mt-5">
+                        <li>07-1234-5678</li>
+                        <li>
+                            <a href="milto:sweetaste@email.com">sweetaste@email.com</a>
+                        </li>
+                        <li>800 高雄市新興區幸福路 520 號</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 text-right d-none d-md-block">
+                    <img src="../images/sm-今天是個吃甜點的好日子.svg" width="60" alt />
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-5">
+                    <a href="#"><img src="../images/ic-line@.svg" width="32" height="32" alt /></a>
+                    <a href="#"><img src="../images/ic-facebook.svg" width="32" height="32" alt /></a>
+                </div>
+                <div class="col-md-5 text-md-right mt-3 mt-md-0">
+                    <span class="text-primary">&copy; 2020 Sweetaste* All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

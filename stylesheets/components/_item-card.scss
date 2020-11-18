@@ -1,0 +1,67 @@
+.item-card {
+  .item-image {
+    height: 315px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    .item-tag {
+      padding: 10px;
+      background-color: $primary;
+      color: #fff;
+      writing-mode: vertical-lr;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      letter-spacing: 5px;
+    }
+
+    .item-love-icon {
+      position: absolute;
+      top: 19px;
+      right: 22px;
+
+      .ui-checkbox {
+        &:checked ~ .fas {
+          display: block;
+        }
+        &:checked ~ .far {
+          display: none;
+        }
+      }
+
+      .ui-check-display {
+        cursor: pointer;
+      }
+      .fa-heart {
+        font-size: 20px;
+      }
+
+      .ui-show {
+        display: block;
+      }
+
+      .ui-hidden {
+        display: none;
+      }
+    }
+  }
+
+  .item-body {
+    border: 1px solid #eaf0ed;
+    .item-name {
+      border-right: 1px solid #eaf0ed;
+    }
+
+    .item-name,
+    .item-price {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 1.25rem;
+    }
+  }
+
+  .item-card-btn {
+    background-color: #eaf0ed;
+  }
+}
